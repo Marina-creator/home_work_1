@@ -2,11 +2,11 @@ package ru.mine;
 
 public class Conditioner {
     private int temperature;
-    private String name;
+    private String nameOfCond;
 
-    public Conditioner(int temperature, String name) {
+    public Conditioner(int temperature, String nameOfCond) {
         this.temperature = temperature;
-        this.name = name;
+        this.nameOfCond = nameOfCond;
     }
 
     void makeItBlow () {
@@ -18,5 +18,15 @@ public class Conditioner {
             System.out.println("Температура в порядке! Наслаждаться!");
         }
 
+    }
+
+    void playMusic () {
+       if (nameOfCond == "Samsung" || nameOfCond == "Zanussi") {
+           System.out.println("Play la-la-la");
+       } else if (nameOfCond == "Electrolux") {
+           System.out.println("Play Para-ram");
+       } else {
+           System.out.println("Keep silent");
+       }
     }
 }
