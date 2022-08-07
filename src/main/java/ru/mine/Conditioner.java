@@ -22,9 +22,9 @@ public class Conditioner {
 
     void playMusic () {
        if (nameOfCond == "Samsung" || nameOfCond == "Zanussi") {
-           System.out.println("Play la-la-la");
+           System.out.println("Play Jonathan Roy - Keeping Me Alive");
        } else if (nameOfCond == "Electrolux") {
-           System.out.println("Play Para-ram");
+           System.out.println("Play Caro Emerald - A Night Like This");
        } else {
            System.out.println("Keep silent");
        }
